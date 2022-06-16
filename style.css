@@ -270,6 +270,7 @@ footer {
   margin: 10px;
 }
 #input {
+  paddin-left:15px;
   margin-right: 5px;
   width: 100%;
   border-radius: 25px;
@@ -342,10 +343,10 @@ footer {
   #input {
     margin: 20px;
     height: 40px;
-    width: 50%;
+    width: 260px;
   }
   #send {
-    width: 20%;
+    width: 140px;
   }
 }
 @media screen and (max-width: 768px) {
