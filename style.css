@@ -1,0 +1,611 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: Roboto, "Segoe UI", sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+}
+#header {
+  height: 100vh;
+  background-image: url(https://wallpaperaccess.com/full/3562758.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#navbar {
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+.topnav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3rem;
+  display: block;
+  padding: 8px 16px;
+}
+.logo {
+  float: left;
+  width: 70px;
+  margin: 5px 0;
+}
+.title {
+  float: left;
+  color: white;
+  padding: 3px;
+  margin-left: 10px;
+  font-size: 24px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+span {
+  color: #d6ce15;
+  font-size: 30px;
+  font-weight: 700;
+}
+.rightnav:hover {
+  opacity: 0.4;
+}
+.topnav .icon {
+  display: none;
+}
+/* drop down */
+.dropdown {
+  float: right;
+  overflow: hidden;
+  padding: 8px 16px;
+}
+#btn {
+  text-align: center;
+  font-size: 1.3rem;
+}
+a i {
+  color: wheat;
+}
+.dropdown .dropbtn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  background-color: #fbfbf6;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  height: auto;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* end drop down */
+
+/* body */
+#a {
+  text-align: center;
+}
+#body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+}
+.t {
+  color: #d6ce15;
+  padding: 10px 14px;
+  font-size: 2rem;
+}
+.description {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  padding: 0 14px;
+  margin-bottom: 35px;
+}
+.explorebtn {
+  background-color: #d6ce15;
+  border-radius: 29px;
+  margin: 15px;
+  padding: 10px 20px;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-weight: bold;
+  text-decoration: none;
+}
+.explorebtn:hover {
+  opacity: 0.7;
+}
+/* end body */
+
+/* Part 1 */
+#bodycon {
+  background-color: #e8e8d6;
+}
+.secheader {
+  color: #070705;
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px 15px;
+}
+#results {
+  overflow: auto;
+  white-space: nowrap;
+}
+.result1 {
+  border: 2px solid gray;
+  padding: 5px;
+  margin: 10px;
+  display: inline-block;
+  width: 300px;
+  font-size: 1.3rem;
+}
+.date {
+  padding-bottom: 29px;
+  color: grey;
+}
+.team1 {
+  display: flex;
+}
+.team1 h4 {
+  font-size: 1.3rem;
+  padding: 13px;
+  text-align: center;
+}
+.result1 img {
+  width: 50px;
+  height: 50px;
+}
+hr {
+  margin: 10px;
+}
+.result1body {
+  display: flex;
+  justify-content: space-between;
+}
+/* end Part 1 */
+
+/* Part 2 */
+#news {
+  height: 100%;
+  margin: 40px 0;
+}
+.news1 {
+  padding: 3px;
+  margin: 20px auto;
+  width: 97%;
+  height: 100px;
+  background-color: rgb(162, 162, 32);
+}
+.news1 img {
+  width: 100px;
+  height: 100%;
+}
+.news1 a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  text-align: left;
+  height: 100%;
+}
+.news1 a:hover {
+  transform: scale(1.01);
+}
+.news1:hover {
+  transform: scale(1.03);
+}
+.news1 p {
+  padding-left: 10px;
+  font-size: 1.5rem;
+  align-self: center;
+  font-family: Geneva, Tahoma, sans-serif;
+  color: #0b0b07;
+}
+.list li {
+  list-style: none;
+}
+.vm {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: rgb(17, 16, 16);
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px;
+  float: right;
+}
+.vm:hover {
+  opacity: 0.7;
+}
+/* Footer */
+footer {
+  background: url(https://www.pixelandparcel.com/wp-content/uploads/2017/03/footer-background.jpg);
+  color: rgb(226, 255, 6);
+  margin-top: 90px;
+}
+.foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.footerlogo {
+  width: 80px;
+  margin: 10px auto;
+}
+.foothead .description {
+  text-align: justify;
+  margin: auto;
+  padding: 20px;
+}
+.contact-us-right {
+  padding: 0 10px;
+  margin: 0;
+  width: 100%;
+}
+#form {
+  display: flex;
+  margin: 10px;
+}
+#input {
+  margin-right: 5px;
+  width: 100%;
+  border-radius: 25px;
+}
+#send {
+  float: right;
+  background-color: #caca1b;
+  color: #fbfbf8;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 8px 20px;
+  border: none;
+}
+#send:hover {
+  opacity: 0.7;
+}
+.social h2 {
+  margin: 10px;
+}
+.social img {
+  padding: 20px 10px;
+}
+.social img:hover {
+  transform: scale(1.3);
+}
+.pol {
+  text-align: center;
+  margin: 20px auto;
+}
+.pol a {
+  text-decoration: none;
+  color: rgb(197, 237, 16);
+  margin: 3px;
+  font-weight: 500;
+}
+.pol a:hover {
+  text-decoration: underline;
+}
+.rights {
+  color: rgb(170, 170, 170);
+  margin: auto;
+  text-align: center;
+}
+/* End footer */
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+  /* .topnav.responsive a i {
+    color: black;
+  } */
+  #btn:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 1200px) {
+  #form {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  #input {
+    margin: 20px;
+    height: 40px;
+    width: 50%;
+  }
+  #send {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #navbar {
+    background-color: rgb(22, 20, 20);
+  }
+  a i {
+    color: white;
+  }
+  .topnav.responsive {
+    background-color: #ffef09;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive .logo {
+    display: none;
+  }
+  .topnav.responsive .title {
+    display: none;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .s {
+    display: flex;
+    flex-direction: row;
+  }
+  .newswrapper {
+    overflow-y: scroll;
+  }
+  .newswrapper p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 10px;
+    text-align: left;
+  }
+}
+/* Media Queries for desktop */
+@media only screen and (min-width: 1220px) {
+  #navbar {
+    background-color: rgba(42, 42, 42, 0.4);
+    z-index: 11;
+  }
+  .topnav {
+    margin: 0 30px;
+  }
+  .topnav a {
+    color: white;
+  }
+  .icon {
+    display: none;
+  }
+  .right {
+    display: flex;
+    float: right;
+  }
+  .dropdown .dropbtn {
+    color: white;
+  }
+  .dropdown-content {
+    background-color: yellow;
+  }
+  .dropdown-content a {
+    color: black;
+  }
+  #body {
+    margin: 0 140px;
+  }
+  .t {
+    font-size: 2.2rem;
+  }
+  .description {
+    font-size: 1.5rem;
+    width: 60%;
+  }
+  .explorebtn {
+    font-size: 1.2rem;
+    padding: 7px 30px;
+  }
+  .secheader {
+    display: inline-block;
+    background-color: rgba(5, 5, 5, 1);
+    border-radius: 29px;
+    margin: 40px 0 25px 150px;
+    padding: 10px 25px;
+    color: #d6ce15;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-weight: bold;
+  }
+  #results {
+    margin: 0 140px;
+  }
+  .result1 {
+    width: 360px;
+  }
+  .all {
+    position: relative;
+    margin: 0 40px;
+    z-index: 1;
+  }
+  .all1 {
+    max-width: 105rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 26.33333333333333%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 39rem;
+  }
+  .news1 {
+    height: fit-content;
+    padding: 0;
+    margin: 10px;
+  }
+  .news1 a {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+  .Limg {
+    width: 100%;
+  }
+  .Limg img {
+    width: 100%;
+    height: 98%;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  #mainnews {
+    position: sticky;
+    width: 56.66666666666666%;
+    height: fit-content;
+  }
+  #mainnews a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 38.6rem;
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+  }
+  .imgwrapper {
+    width: 100%;
+    height: 78%;
+  }
+  .imgwrapper img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .newswrapper {
+    height: 100%;
+    text-align: center;
+  }
+  .newswrapper p {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", "Helvetica Neue", sans-serif;
+    color: #070705;
+    font-size: 1.5rem;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 1.3;
+    padding: 10px;
+    margin: auto;
+  }
+  .Nwrapper p {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", "Helvetica Neue", sans-serif;
+    color: #070705;
+    font-size: 1.4rem;
+    text-align: justify;
+    font-weight: 400;
+    padding: 0 10px 8px 10px;
+    margin: 0;
+  }
+  footer {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  footer h2 {
+    font-size: 2rem;
+  }
+  .foot {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    text-align: left;
+  }
+  .foothead {
+    margin-left: 100px;
+  }
+  .footerlogo {
+    width: 80px;
+    margin: 10px auto;
+  }
+  .foothead .description {
+    text-align: none;
+    margin: 0;
+    padding: 0;
+  }
+  .social {
+    float: right;
+    margin-top: 80px;
+  }
+  .contact-us-right {
+    margin-top: 30px;
+    margin-right: 100px;
+    width: 24%;
+  }
+  .contact-us-right h2 {
+    padding-bottom: 15px;
+  }
+  #form {
+    display: block;
+    margin: 0;
+    width: 300px;
+  }
+  #input {
+    height: 40px;
+  }
+  #send {
+    width: 40%;
+    margin: 10px 0;
+  }
+}
